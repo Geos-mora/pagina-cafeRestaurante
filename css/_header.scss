@@ -1,0 +1,71 @@
+$colo1:#F9F4E9;
+$colo2:#f4f3f0;
+header{
+    width: 100%;
+    background: url(/img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    .contenedor{
+        position: relative;
+        height: 700px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        
+
+        .menu{
+            padding: 15px;
+            margin-bottom: 10px;
+            display:flex;
+            gap: 40PX;
+            justify-content: flex-end;
+            width: 100%;
+            .naranja{
+                color: orange;
+             }
+            
+            a{
+                text-decoration: none;
+                color: $colo1;
+                font-weight:300;
+                font-size: 20PX;
+                position: relative;
+                &:hover{
+                    text-decoration: underline;
+                }
+                
+            }
+          
+        }
+        .textos{
+          
+            width: 100%;
+            color: $colo2;
+            position: absolute;
+            top: 50%;
+
+            .nombre{
+                font-weight: 700;
+                font-size: 50px;
+                span{
+                    
+                    font-weight:300 ;
+                    font-style: italic;
+                }
+            }
+            h4{
+               
+                font-weight: 300;
+                font-size: 25px;
+                font-style: italic;
+            }
+        }
+
+        
+
+
+    }
+    
+}

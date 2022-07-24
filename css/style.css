@@ -1,0 +1,253 @@
+header {
+  width: 100%;
+  background: url(/img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+header .contenedor {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+header .contenedor .menu {
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 40PX;
+  justify-content: flex-end;
+  width: 100%;
+}
+header .contenedor .menu .naranja {
+  color: orange;
+}
+header .contenedor .menu a {
+  text-decoration: none;
+  color: #F9F4E9;
+  font-weight: 300;
+  font-size: 20PX;
+  position: relative;
+}
+header .contenedor .menu a:hover {
+  text-decoration: underline;
+}
+header .contenedor .textos {
+  width: 100%;
+  color: #f4f3f0;
+  position: absolute;
+  top: 50%;
+}
+header .contenedor .textos .nombre {
+  font-weight: 700;
+  font-size: 50px;
+}
+header .contenedor .textos .nombre span {
+  font-weight: 300;
+  font-style: italic;
+}
+header .contenedor .textos h4 {
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.main {
+  background: url(/img/bg-textura.png);
+  background-repeat: repeat;
+  /* -----------------------ACERCA DE------------------ */
+  /* -----------------------MENU------------------ */
+  /* --------------------GALERIA-----------------*/
+  /* ----------------------------UBICACION---------------------------- */
+}
+.main .acerca_de .contenedor {
+  position: relative;
+}
+.main .acerca_de .contenedor .foto {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0);
+  z-index: 0;
+}
+.main .acerca_de .contenedor article {
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  gap: 15px;
+  padding: 40px;
+  position: relative;
+  left: 60%;
+  top: 200px;
+}
+.main .acerca_de .contenedor article h3 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.main .acerca_de .contenedor article p {
+  font-family: "Open Sans", sans-serif;
+}
+.main .menu {
+  width: 100%;
+  margin-top: 170px;
+  margin-bottom: 50px;
+}
+.main .menu .contenerdor {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 50px;
+  justify-content: center;
+}
+.main .menu .contenerdor .titulo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(56, 56, 56);
+}
+.main .menu .contenerdor .contenedor_menu {
+  border: 1px solid black;
+  padding: 10px;
+  width: 60vw;
+  margin: auto;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 {
+  border: 2px solid black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 article {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 article .categoria {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 article .contenedor_platillos {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 50px;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 article .contenedor_platillos .platillo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  border-bottom: 4px dotted black;
+  padding-bottom: 20px;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 article .contenedor_platillos .platillo .nombre {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 article .contenedor_platillos .platillo .precio {
+  font-weight: 600;
+}
+.main .menu .contenerdor .contenedor_menu .contenedor_menu2 article .contenedor_platillos .platillo .descripcion {
+  color: rgb(95, 94, 94);
+}
+.main .galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main .galeria .foto img {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+}
+.main .galeria .foto img:hover {
+  opacity: 1;
+}
+.main .ubicacion {
+  margin-bottom: 50px;
+  background: white;
+}
+.main .ubicacion .contenedor {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 50px;
+  justify-items: center;
+}
+.main .ubicacion .contenedor .titulo {
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 60px;
+}
+.main .ubicacion .contenedor .contenedor_ubicacion {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+.main .ubicacion .contenedor .contenedor_ubicacion .direccion {
+  font-size: 20px;
+}
+.main .ubicacion .contenedor .contenedor_ubicacion .direccion p {
+  padding: 5px;
+}
+.main .ubicacion .contenedor .contenedor_ubicacion .horario {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  text-align: center;
+}
+.main .ubicacion .contenedor .contenedor_ubicacion .horario h3 {
+  font-size: 25px;
+}
+.main .ubicacion .contenedor .contenedor_ubicacion .horario .semana {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+}
+.main .mapa {
+  background: white;
+}
+.main .mapa iframe {
+  height: 1fr;
+  width: 100%;
+}
+
+footer {
+  width: 100vw;
+  background-color: black;
+}
+footer .contenedor {
+  font-size: 25px;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
